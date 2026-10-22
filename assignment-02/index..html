@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Student Registration Form</h1>
+
+      <form>
+        <h3>1. Personal Information</h3>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="father">Father's Name:</label>
+        <input type="text" id="father" name="father" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label>Gender:</label>
+        <div class="option">
+          <input type="radio" id="male" name="gender" value="Male" required />
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label>
+
+          <input type="radio" id="other" name="gender" value="Other" />
+          <label for="other">Other</label>
+        </div>
+
+        <h3>2. Contact Information</h3>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <h3>3. Academic Information</h3>
+
+        <label for="regno">Registration Number:</label>
+        <input type="text" id="regno" name="regno" required />
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+          <option value="">Select Department</option>
+          <option value="Software Engineering">Software Engineering</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Artificial Intelligence">
+            Artificial Intelligence
+          </option>
+          <option value="Information Technology">Information Technology</option>
+        </select>
+
+        <label for="degree">Degree Program:</label>
+        <select id="degree" name="degree" required>
+          <option value="">Select Degree</option>
+          <option value="BS">BS</option>
+          <option value="MS">MS</option>
+          <option value="PhD">PhD</option>
+        </select>
+
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester" required>
+          <option value="">Select Semester</option>
+          <option value="1">1st Semester</option>
+          <option value="2">2nd Semester</option>
+          <option value="3">3rd Semester</option>
+          <option value="4">4th Semester</option>
+          <option value="5">5th Semester</option>
+          <option value="6">6th Semester</option>
+          <option value="7">7th Semester</option>
+          <option value="8">8th Semester</option>
+        </select>
+
+        <h3>4. Additional Information</h3>
+
+        <label for="photo">Upload Photograph:</label>
+        <input type="file" id="photo" name="photo" />
+
+        <label>Select Programs of Interest:</label>
+        <div class="option">
+          <input type="checkbox" id="se" name="programs" value="SE" />
+          <label for="se">SE</label>
+
+          <input type="checkbox" id="cs" name="programs" value="CS" />
+          <label for="cs">CS</label>
+
+          <input type="checkbox" id="ai" name="programs" value="AI" />
+          <label for="ai">AI</label>
+
+          <input type="checkbox" id="it" name="programs" value="IT" />
+          <label for="it">IT</label>
+        </div>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
